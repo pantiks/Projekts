@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Drum Kit</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="header">
+    <a href="index.html"><img class="icon" src="home_icon.png" width="60px"></a>
+    <div class="navigation">
+      <a href="instruments.html" class="link">Muzikālie instrumenti</a>
+      <a href="instruments_history.html" class="link">Instrumentu vēsture</a>
+      <a href="music_history.html" class="link">Mūzikas vēsture</a>
+    </div>
+  </div>
+
+  <div class="main">
+    <h1 class="title">Mūzikas instrumenti</h1>
+    <p class="main_textarea">Izvēlies instrumentu un spēlē, izmantojot tastatūru vai nospiežot pogas uz ekrāna.</p>
+    <div class="cards">
+      <div class="card">
+        <img class="card-image" src="drum.png" width="200px">
+        <button onclick="showTab('part1')">Bungas</button>
+      </div>
+      <div class="choose">
+        <img class="card-image" src="arrows.png" width="250px">
+      </div>
+      <div class="card">
+        <img class="card-image" src="guitar.png" width="200px">
+        <button onclick="showTab('part2')">Ģitāra</button>
+      </div>
+    </div>
+
+    <div id="part1" class="container" style="display:none;">
+      <div class="drum-wrapper">
+        <img src="drum.png" class="instrument">
+        <button class="btn" style="left:19%; top:23%;" onclick="hit(this, 'Q')">Q</button>
+        <button class="btn" style="left:80%; top:23%;" onclick="hit(this, 'R')">R</button>
+        <button class="btn" style="left:85%; top:38%;" onclick="hit(this, 'F')">F</button>
+        <button class="btn" style="left:40%; top:39%;" onclick="hit(this, 'W')">W</button>
+        <button class="btn" style="left:29%; top:54%;" onclick="hit(this, 'A')">A</button>
+        <button class="btn" style="left:59%; top:39%;" onclick="hit(this, 'E')">E</button>
+        <button class="btn" style="left:72%; top:48%;" onclick="hit(this, 'D')">D</button>
+        <button class="btn" style="left:50%; top:65%;" onclick="hit(this, 'S')">S</button>
+      </div>
+    </div>
+    <div id="part2" class="container" style="display:none;">
+      <div class="guitar-wrapper">
+        <img src="guitar_play.png" class="instrument">
+        <button class="btn" style="left:50%; top:20%;" onclick="hit(this, 'Z')">Z</button>
+        <button class="btn" style="left:50%; top:28%;" onclick="hit(this, 'X')">X</button>
+        <button class="btn" style="left:50%; top:36%;" onclick="hit(this, 'C')">C</button>
+        <button class="btn" style="left:50%; top:44%;" onclick="hit(this, 'V')">V</button>
+        <button class="btn" style="left:50%; top:52%;" onclick="hit(this, 'B')">B</button>
+        <button class="btn" style="left:50%; top:60%;" onclick="hit(this, 'N')">N</button>
+        <button class="btn" style="left:50%; top:68%;" onclick="hit(this, 'M')">M</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div>
+      <a href="https://wa.me/37124402810"><img class="icon" src="whatsapp.png" width="50px"></a>
+      <a href="https://www.instagram.com/saschaa______?igsh=NzVzeGUxZ2Q0NmY1"><img class="icon" src="instagram.png" width="50px"></a>
+    </div>
+    <div class="footer_container"><p>2026</p></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
